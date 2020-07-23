@@ -11,11 +11,10 @@ function setup() {
 function draw() {
     background(0);
     fill('rgb(0,255,0)');
-    text(timer, 10, 10);
     snake.draw();
     apple.spawn();
 
-    if (timer === 20 && hasLost === false) {
+    if (timer === 15 && hasLost === false) {
         timer = 0;
         snake.moveHead();
     }
